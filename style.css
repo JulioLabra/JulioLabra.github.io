@@ -1,0 +1,153 @@
+/* Set All HTML elements with border-box sizing */
+* {
+  box-sizing: border-box;
+}
+/* ----- structure ------- */
+/*This is the styling properties for the semantic containers */
+header {
+  background-color: rgb(162, 165, 1);
+  margin-top: 0px;
+  margin-bottom: 50px;
+  margin-right: 0px;
+  margin-left: 0px;
+  text-align: center;
+}
+body {
+  background-color: rgb(255, 175, 28);
+  margin: 0px 0px 0px 0px;
+}
+main {
+  margin: 0px 0px 0px 0px;
+}
+footer {
+  background-color: rgb(144, 136, 156);
+  margin: 200px 0px 0px 0px;
+  padding: 20px 0 40px 0;
+}
+article {
+    padding: 45px 0 45px 0;
+    margin: 80px 105px 0 105px;
+    background-color: rgb(165, 159, 224);
+    border-radius: 80px;
+}
+
+nav {
+    background-color: rgb(165, 159, 224);
+    padding: 5px 0 5px 0;
+  }
+
+/* ----- format text ------ */
+/*This is the styling properites for the text html elements*/
+/*this centers all text it is applied to */
+.center {
+  text-align: center;
+}
+h1 {
+  font-family: "Sansita Swashed", cursive;
+  font-size: 80px;
+  color: rgb(226, 233, 244);
+  margin: 0 0 30px 0;
+  letter-spacing: 5px;
+}
+h2 {
+  font-family: "Comfortaa", cursive;
+  font-size: 40px;
+  color: rgb(79, 62, 124);
+  margin: 0px 0px 50px 0px;
+  font-style: italic;
+}
+h3 {
+  font-family: "Sansita Swashed", cursive;
+  color: rgb(79, 62, 124);
+  font-size: 55px;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(226, 233, 244);
+  font-size: 22px;
+
+  padding: 0 85px 40px 85px;
+}
+a {
+  font-family: "Comfortaa", cursive;
+  font-size: 28px;
+  padding: 6px 100px 6px 100px;
+}
+/*This code creates pseudo classes that change the state of an element after 
+it has been activated. It is vital that the code is setup in this order 
+for it to work properly*/
+a:link {
+  color: rgb(71, 71, 87);
+}
+a:visited {
+  color: rgb(92, 100, 81);
+}
+a:hover {
+  color: rgb(86, 60, 116);
+}
+a:active {
+  color: rgb(190, 170, 81);
+}
+/*the ul and ol are here to style the lists in html*/
+ul {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(226, 233, 244);
+  font-size: 22px;
+
+  display: table;
+  margin:  auto;
+  padding-bottom: 40px;
+}
+ol {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(226, 233, 244);
+    font-size: 22px;
+  
+    display: table;
+    margin: auto;
+    padding-bottom: 40px;
+  }
+  /*The column class selector is styled here*/
+.column {
+  float: left;
+  width: 30%;
+  padding: 20px 20px 20px 20px;
+  margin: 80px 0px 20px 20px;
+  border-radius: 10px;
+}
+/*the row class selector is styled here to add space between the columns*/
+.row:after {
+  content: "";
+  display: table;
+  clear: none;
+}
+/*I've modified the horizontal rows to be thicker*/
+hr {
+    height: 15px;
+    background-color:  rgb(255, 175, 28);
+    border: none;
+    
+}
+/* ----- format image ----- */
+/*The img have been styled to change size as the browser is adjusted*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*the radius of images have been adjusted to have a subtle curve*/
+img {
+  border-radius: 10px;
+}
+/*This allows for the images that call the selector class to zoom when hovered over*/
+.text_zoom{
+    font-size: 100%;
+}
+/*This allows for the transition beteen the full text_zoom to transition smoothly*/
+.zoom {
+  transition: transform 0.25s ease;
+}
+/*this selector allows the action to happen when the cursor hovers over the image*/
+.zoom:hover {
+  -webkit-transform: scale(1.5); /* or some other value */
+  transform: scale(1.5);
+}
